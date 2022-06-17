@@ -2,30 +2,55 @@
   <img src="/assets/background.png" alt="" width="100%" height="100%">
 </ion-header>
 
-<ion-content color="primary">
-    
-  <ion-buttons id="language">
-    <ion-button>
-      Português
-      <!-- <ion-icon slot="start" name=""></ion-icon> -->
-    </ion-button>
-    <ion-button>
-      Español
-      <!-- <ion-icon slot="start" name=""></ion-icon> -->
-    </ion-button>
-    <ion-button>
+<ion-content color="primary" class="ion-justify-content-center">    
+  <ion-row>   
+    <ion-col size="10" class="ion-justify-content-center ion-margin">
+      <ion-buttons id="language">
+        <ion-button>
+          Português
+          <!-- <ion-icon slot="start" name=""></ion-icon> -->
+        </ion-button>
+        <ion-button>
+          Español
+          <!-- <ion-icon slot="start" name=""></ion-icon> -->
+        </ion-button>
+        <ion-button>
+            <ion-select multiple="false" placeholder="More...">           
+              <ion-select-option value="peperoni">Peperoni</ion-select-option>
+              <ion-select-option value="hawaii">Hawaii</ion-select-option>
+            </ion-select>     
+          <!-- <ion-icon slot="start" name=""></ion-icon> -->
+        </ion-button>
+      </ion-buttons>
+      <ion-list>
+        <ion-item class="ion-no-padding">
+          <ion-input placeholder="Phone or Email"></ion-input> 
+        </ion-item>
+        <ion-item class="ion-no-padding">
+          <ion-input placeholder="Password" type="password"></ion-input>
+        </ion-item>
+      </ion-list>
+  
+        <ion-button expand="full"  shape="square" color="tertiary">
+          <h6>Log in</h6>
+        </ion-button>
+        <ion-button expand="block" fill="clear" shape="round" color="tertiary">
+          <h6>Forgot Password</h6>
+        </ion-button>
 
-        <ion-select multiple="false" placeholder="More...">
+        <ion-row class="box-hr">
+          <ion-col size="5"><hr></ion-col>
+          <ion-col size="1"><span>or</span></ion-col>
+          <ion-col size="5"><hr></ion-col>
+        </ion-row>
         
-       
-       
-          <ion-select-option value="peperoni">Peperoni</ion-select-option>
-          <ion-select-option value="hawaii">Hawaii</ion-select-option>
-        </ion-select>
-     
-      <!-- <ion-icon slot="start" name=""></ion-icon> -->
-    </ion-button>
-  </ion-buttons>
+        
+        <ion-button color="success" expand="block" shape="undefined" class="ion-padding create-account" >
+          <h6>Creat New Facebook Account</h6>
+        </ion-button>
+        
+    </ion-col>
+  </ion-row>
 
 
 </ion-content>
